@@ -8,7 +8,7 @@
 
 ### 분류
 
-자료 구조(data_structures), 분할 정복(divide_and_conquer), 세그먼트 트리(segtree), 정렬(sorting)
+자료 구조(data_structures), 분할 정복(divide_and_conquer), 세그먼트 트리(segtree), 정렬(sorting), 병합정렬로 풀어보자!
 
 ### 문제 설명
 
