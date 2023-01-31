@@ -1,6 +1,5 @@
 import sys
 N, M = map(int, input().split())
-sys.setrecursionlimit(10 ** 6)
 
 num_list = list(map(int, input().split()))
 sum_list = []
