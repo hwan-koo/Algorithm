@@ -10,6 +10,5 @@ for i in range(N-2):
             sum_num = num_list[i] + num_list[j] + num_list[k]
             sum_list.append(sum_num)
 
-sum_list = list(set(sum_list))
 filter_sum_list = [n for n in sum_list if n <= M]
 print(max(filter_sum_list))
