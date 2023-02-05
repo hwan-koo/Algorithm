@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 from queue import PriorityQueue
 N = int(input())
 pq = PriorityQueue()
@@ -14,6 +16,3 @@ while pq.qsize() > 0:
         end = a[0]
 
 print(count)
-
-
-
