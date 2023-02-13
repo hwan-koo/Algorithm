@@ -13,8 +13,5 @@ for i in range(26):
 
 for _ in range(q):
     alpha, l, r = map(str, input().split())
-    l = int(l)
-    r = int(r)
-    find = ord(alpha) - 97
-    print(A[find][r+1] - A[find][l])
+    print(A[ord(alpha) - 97][int(r)+1] - A[ord(alpha) - 97][int(l)])
 
