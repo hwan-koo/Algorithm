@@ -17,7 +17,5 @@ for _ in range(q):
     l = int(l)
     r = int(r)
     find = ord(alpha) - 97
-    haha = A[find][r+1]
-    hoho = A[find][l]
-    print(haha - hoho)
+    print(A[find][r+1] - A[find][l])
 
