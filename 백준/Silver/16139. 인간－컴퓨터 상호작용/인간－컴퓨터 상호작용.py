@@ -4,8 +4,7 @@ S = str(input()).rstrip()
 q = int(input())
 A = [[0 for _ in range(len(S)+1)] for _ in range(26)]
 for i in range(26):
-    hb = 97 + i
-    alphabet = chr(hb)
+    alphabet = chr(97 + i)
     for j in range(1, len(S)+1):
         if S[j-1] == alphabet:
             A[i][j] = A[i][j-1] + 1
