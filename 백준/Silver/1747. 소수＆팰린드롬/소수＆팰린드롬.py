@@ -7,20 +7,8 @@ for i in range(2, int(math.sqrt(10 ** 7)) + 1):
         continue
     for j in range(i + i, 10 ** 7 + 1, i):
         A[j] = 0
-def palindrome(x):
-    temp = list(str(x))
-    s = 0
-    e = len(temp) - 1
-    while s < e:
-        if temp[s] != temp[e]:
-            return False
-        s += 1
-        e -= 1
-    return True
-index = N
-while True:
-    if A[index] != 0:
-        if palindrome(A[index]):
-            print(A[index])
+for i in range(N, 10 ** 7 + 1):
+    if A[i] != 0:
+        if "".join(reversed(list(str(A[i])))) == str(A[i]):
+            print(A[i])
             break
-    index += 1
