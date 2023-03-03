@@ -1,22 +1,21 @@
 import math
 def solution(numbers):
-    answer = 0
     num_list = set()
     numbers = list(map(int, numbers))
     visited = [False] * len(numbers)
-    A = []
+    make_num = []
     def word():
-        if len(A) == k:
-            num_list.add(int("".join(A)))
+        if len(make_num) == k:
+            num_list.add(int("".join(make_num)))
             return
         else:
             for i in range(len(numbers)):
                  if not visited[i]:
-                    A.append(str(numbers[i]))
+                    make_num.append(str(numbers[i]))
                     visited[i] = True
                     word()
                     visited[i] = False
-                    A.pop()
+                    make_num.pop()
                 
     for i in numbers:
         num_list.add(i)
@@ -29,7 +28,7 @@ def solution(numbers):
             if x % i == 0:
                 return 0
         return 1
-    anwer = 0
+    answer = 0
     for i in num_list:
         if i == 0 or i == 1:
             continue
